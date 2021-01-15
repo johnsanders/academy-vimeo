@@ -15,6 +15,7 @@ class mod_vimeo_mod_form extends moodleform_mod
 		$mform->addElement('header', 'general', get_string('general', 'form'));
 		$mform->addElement('text', 'name', get_string('vimeoname', 'vimeo'), array('size' => '64'));
 		$mform->addElement('text', 'vimeourl', get_string('vimeourl', 'vimeo'), array('size' => '256'));
+		$mform->addElement('text', 'cuein', get_string('vimeocuein', 'vimeo'), array('size' => '20'));
 
 		if (!empty($CFG->formatstringstriptags)) {
 			$mform->setType('name', PARAM_TEXT);

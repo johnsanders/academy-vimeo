@@ -34,6 +34,7 @@ $string['privacy:metadata'] = 'Vimeo does not store any personal data';
 $string['view'] = 'View';
 $string['vimeo:edit'] = 'Edit test';
 $string['vimeo:view'] = 'View test';
+$string['vimeocuein'] = 'Cue in time (eg. 0m12s)';
 $string['vimeoname'] = 'Name';
 $string['vimeonameplural'] = 'Vimeo Videos';
 $string['vimeosettings'] = 'Settings';

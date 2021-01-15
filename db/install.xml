@@ -15,6 +15,7 @@
         <FIELD NAME="introformat" TYPE="int" LENGTH="4" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="The format of the intro field."/>
         <FIELD NAME="vimeoid" TYPE="text" NOTNULL="true" SEQUENCE="false" COMMENT="The id of the Vimeo video."/>
         <FIELD NAME="vimeourl" TYPE="text" NOTNULL="true" SEQUENCE="false" COMMENT="The url of the Vimeo video."/>
+        <FIELD NAME="vimeocuein" TYPE="text" NOTNULL="true" SEQUENCE="false" COMMENT="The duration to cue into the video to start."/>
       </FIELDS>
       <KEYS>
         <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
