@@ -4,16 +4,15 @@ defined('MOODLE_INTERNAL') || die();
 
 $capabilities = [
 	'mod/vimeo:view' => [
-		'captype' => 'view',
+		'captype' => 'read',
 		'contextlevel' => CONTEXT_MODULE,
 		'archetypes' => [
-			'editingteacher' => CAP_ALLOW,
+			'user' => CAP_ALLOW,
 		],
-		'clonepermissionsfrom' => 'moodle/course:view',
 	],
 	'mod/vimeo:edit' => [
 		'captype' => 'write',
-		'contextlevel' => CONTEXT_MODULE,
+		'contextlevel' => CONTEXT_COURSE,
 		'archetypes' => [],
 	],
 ];

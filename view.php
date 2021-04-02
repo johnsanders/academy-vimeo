@@ -10,7 +10,7 @@ if ($id) {
 	$course = $DB->get_record('course', array('id' => $cm->course), '*', MUST_EXIST);
 	$moduleinstance = $DB->get_record('vimeo', array('id' => $cm->instance), '*', MUST_EXIST);
 } else if ($v) {
-	$moduleinstance = $DB->get_record('vimeo', array('id' => $n), '*', MUST_EXIST);
+	$moduleinstance = $DB->get_record('vimeo', array('id' => $v), '*', MUST_EXIST);
 	$course = $DB->get_record('course', array('id' => $moduleinstance->course), '*', MUST_EXIST);
 	$cm = get_coursemodule_from_instance('vimeo', $moduleinstance->id, $course->id, false, MUST_EXIST);
 } else {
