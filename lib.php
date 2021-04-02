@@ -11,6 +11,8 @@ function vimeo_supports($feature)
 			return true;
 		case FEATURE_MOD_ARCHETYPE:
 			return MOD_ARCHETYPE_RESOURCE;
+		case FEATURE_COMPLETION_TRACKS_VIEWS:
+			return true;
 		default:
 			return null;
 	}

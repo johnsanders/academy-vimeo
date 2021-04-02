@@ -38,6 +38,9 @@ $templatecontext = [
 	'name' => $moduleinstance->name,
 ];
 
+$completion = new completion_info($course);
+$completion->set_module_viewed($cm);
+
 echo $OUTPUT->header();
 
 echo $OUTPUT->render_from_template('mod_vimeo/iframe_embed', $templatecontext);
